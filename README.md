@@ -1,4 +1,4 @@
-# Genkit Plugin Project
+# Genkit Project Starter
 
 ## Description
 Put your project description
