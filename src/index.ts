@@ -1,7 +1,6 @@
 import { generate } from '@genkit-ai/ai';
 import { configureGenkit } from '@genkit-ai/core';
 import { defineFlow, startFlowsServer } from '@genkit-ai/flow';
-import { geminiPro } from '@genkit-ai/googleai';
 import * as z from 'zod';
 import { googleAI } from '@genkit-ai/googleai';
 
@@ -22,7 +21,7 @@ export const menuSuggestionFlow = defineFlow(
   async (subject) => {
     const llmResponse = await generate({
       prompt: `Suggest an item for the menu of a ${subject} themed restaurant`,
-      model: geminiPro,
+      model: "googleai/gemini-1.5-pro-latest",
       config: {
         temperature: 1,
       },

@@ -1,8 +1,6 @@
 {
   "compileOnSave": true,
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "compilerOptions": {
     "module": "commonjs",
     "noImplicitReturns": true,
@@ -11,6 +9,11 @@
     "strict": true,
     "target": "es2017",
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "@genkit-ai/core": [
+        "../genkitx-project-template/node_modules/@genkit-ai/core"
+      ]
+    }
   }
 }

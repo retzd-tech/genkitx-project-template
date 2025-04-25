@@ -14,13 +14,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@genkit-ai/ai": "^0.5.8",
-    "@genkit-ai/core": "^0.5.8",
-    "@genkit-ai/dotprompt": "^0.5.8",
-    "@genkit-ai/firebase": "^0.5.7",
-    "@genkit-ai/flow": "^0.5.8",
-    "@genkit-ai/googleai": "^0.5.8",
+    "@genkit-ai/ai": "^0.5.0",
+    "@genkit-ai/core": "^0.5.0",
+    "@genkit-ai/dotprompt": "^0.5.0",
+    "@genkit-ai/firebase": "^0.5.0",
+    "@genkit-ai/flow": "^0.5.0",
+    "@genkit-ai/googleai": "^0.5.0",
     "express": "^4.19.2",
+    "genkitx-plugin-template": "file:../genkitx-plugin-template",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -29,5 +30,8 @@
   "directories": {
     "lib": "lib"
   },
-  "description": ""
+  "description": "",
+  "resolutions": {
+    "@genkit-ai/core": "0.5.0"
+  }
 }
